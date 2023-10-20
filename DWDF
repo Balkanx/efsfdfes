@@ -1,82 +1,2425 @@
-local OrionLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Orion/main/source.lua'))()
-local Player = game.Players.LocalPlayer
-local Window = OrionLib:MakeWindow({Name = "Key system", HidePremium = false, SaveConfig = true, IntroEnabled = false})
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("BX | Balkan x | V3", "DarkTheme")
 
-OrionLib:MakeNotification({
-    Name = "You're logged",
-    Content = "You are logged in as " .. Player.Name,
-    Image = "rbxassetid://4483345998",
-    Time = 5
+local gamename = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+local gameid = game.PlaceId
+local plrs = game:GetService("Players")
+local plr = plrs.LocalPlayer
+local plrname = plr.Name
+local plrdname = plr.DisplayName
+local plrid = plr.UserId
+local plrchr = plr.Character
+local plrage = plr.AccountAge
+local plrcount = #game.Players:GetPlayers()
+local executor = identifyexecutor() or "unknown"
+
+---Tabs
+
+local Tab6 = Window:NewTab("Home")
+local Tab6Section = Tab6:NewSection("Welcome "..plrname.."")
+local Tab6Section = Tab6:NewSection("Display Name: "..plrdname.."")
+local Tab6Section = Tab6:NewSection("Player Id "..plrid.."")
+local Tab6Section = Tab6:NewSection("Account Age "..plrage.."")
+local Tab6Section = Tab6:NewSection("Game Name: "..gamename.."")
+local Tab6Section = Tab6:NewSection("Game Id: "..gameid.."")
+local Tab6Section = Tab6:NewSection("Executor: "..executor.."")
+local Tab1 = Window:NewTab("Games")
+local Tab1Section = Tab1:NewSection("Note:Some script might be old or new")
+local Tab5 = Window:NewTab("Games 2")
+local Tab5Section = Tab5:NewSection("Note:Some script might be old or new")
+local Tab7 = Window:NewTab("Games 3")
+local Tab7Section = Tab7:NewSection("Note:Some script might be old or new")
+local Tab2 = Window:NewTab("Credits")
+local Tab2Section = Tab2:NewSection("Made By valipro1pro1")
+local Tab2Section = Tab2:NewSection("Credits to will")
+local Tab2Section = Tab2:NewSection("Credits to GamerScripter")
+local Tab2Section = Tab2:NewSection("YouTube | aintslimy")
+local Tab2Section = Tab2:NewSection("Discord | vali_23607_23964")
+local Tab2Section = Tab2:NewSection("Discord Server | https://discord.com/invite/z2QcdakrJK")
+local Tab2 = Window:NewTab("Updates")
+local Tab2Section = Tab2:NewSection("Balkan x")
+local Tab3= Window:NewTab("Others")
+local Tab3Section = Tab3:NewSection("Others GUI'S")
+local Tab4 = Window:NewTab("Paid")
+local Tab4Section = Tab4:NewSection("Coming soon")
+
+ 
+---Buttons
+
+local Tab1Section = Tab1:NewSection("Pls donate")
+
+ Tab1Section:NewButton("Pls donate 1","Credits to owner.",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/CF-Trail/tzechco-PlsDonateAutofarmBackup/main/old.lua'))()
+end)
+
+Tab1Section:NewButton("Pls donate 2","Credits to owner",function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/f0a3yune')))()
+end)
+
+Tab1Section:NewButton("Pls donate 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hecmax/hecmax/main/hjk", true))()
+end)
+
+Tab1Section:NewButton("Pls donate 4","Credits to owner",function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/f0a3yune')))()
+end)
+
+Tab1Section:NewButton("Pls donate 5","Credits to owner",function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSHUB_Loader.lua"),true))()
+end)
+
+local Tab1Section = Tab1:NewSection("Prison life")
+
+Tab1Section:NewButton("Prison life 1","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/H17S32/Tiger_Admin/main/Script'))()
+end)
+
+Tab1Section:NewButton("Prison life 2","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/LiverMods/xRawnder/main/Project'))()
+end)
+
+Tab1Section:NewButton("Prison life 3","Credits to owner",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/zeuise0002/SSSWWW222/main/README.md'),true))()
+end)
+
+Tab1Section:NewButton("Prison life 4","Credits to owner",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'),true))()
+end)
+
+Tab1Section:NewButton("Prison life 5","Credits to owner",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/h17s3/TIGERADMIN/main/TIGERADMINSCRIPTFREE'),true))()
+end)
+
+Tab1Section:NewButton("Prison life 6","Credits to owner",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt'),true))()
+end)
+
+local Tab1Section = Tab1:NewSection("Blox fruits")
+
+Tab1Section:NewButton("Blox fruits 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Minhtriettt/Free-Script/main/MTriet-Hub.lua"))()
+end)
+
+Tab1Section:NewButton("Blox fruits 2","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ZPSXHUB/Hub/main/SnowHub-BloxFruit'))()
+end)
+
+Tab1Section:NewButton("Blox fruits 3","No description",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Sixnumz/ZamexMobile/main/Zamex_Mobile.lua'))()
+end)
+
+Tab1Section:NewButton("Blox fruits 4","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xDepressionx/Free-Script/main/BloxFruit.lua"))()
+end)
+
+Tab1Section:NewButton("Blox fruits 5","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Domadicoof/Domadicoof/main/Domadichub/NottoGay/Start.ranscript"))()
+end)
+
+Tab1Section:NewButton("Blox fruits 6","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MAMAhub1/Mmahub/main/README.md"))()
+end)
+
+Tab1Section:NewButton("Blox fruits 7","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/tufreescript/FTS-X-Hub/main/FTSXHUB%20V1'))()
+end)
+
+Tab1Section:NewButton("Blox fruits 8","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/Protected-25.lua"))()
+end)
+
+Tab1Section:NewButton("Blox fruits 9","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Steveee11/Scripts/main/Blox%20Fruits%20OP%20Script"))()
+end)
+
+Tab1Section:NewButton("Blox fruits 10","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/master/flares"))()
+end)
+
+Tab1Section:NewButton("Blox fruits 11","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BestScriptEverr/Main-/main/Law%20hub"))()
+end)
+
+Tab1Section:NewButton("Blox fruits 12","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tngaming123/TNGHub/main/AutoRaceV4.lua"))()
+end)
+
+Tab1Section:NewButton("Blox fruits 13","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/BLCK"))()
+end)
+
+Tab1Section:NewButton("Blox fruits 14","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/master/modz"))()
+end)
+
+Tab1Section:NewButton("Blox fruits 15","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+end)
+
+Tab1Section:NewButton("Blox fruits 16","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Augustzyzx/UraniumX/main/src_.lua.txt"))()
+end)
+
+Tab1Section:NewButton("Blox fruits 17","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThunderZ-05/HUB/main/Mobile-Loader"))()
+end)
+
+Tab1Section:NewButton("Blox fruits 18","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/S4nZz/bt_project/main/Games/BlacktrapScript.txt'))()
+end)
+
+Tab1Section:NewButton("Blox fruits 20","Credits to owner",function()
+loadingstring(game:HttpGet('https://raw.githubusercontent.com/REWzaKunGz1/premium/main/PadoHub'))()
+end)
+
+Tab1Section:NewButton("Blox fruits 20","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/VEZ2/NEVAHUB/main/2'))()
+end)
+
+local Tab1Section = Tab1:NewSection("Blade Ball")
+
+Tab1Section:NewButton("Blade ball 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/frankblox/rbxscripts/main/0bladeball"))()
+end)
+
+Tab1Section:NewButton("Blade ball 2","No description",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/zeuise0002/SSSWWW222/main/README.md'),true))()
+end)
+
+Tab1Section:NewButton("Blade ball 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/SourceLua/main/Blade_Ball.lua"))()
+end)
+
+Tab1Section:NewButton("Blade ball 4","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/SourceLua/main/Blade_Ball.lua"))()
+end)
+
+Tab1Section:NewButton("Blade ball 5","Credits to owner",function()
+loadstring(game:HttpGet("https://github.com/SadlekAski/Scripts/raw/main/Blade%20Ball/Equip%20any%20ability.lua"))()
+end)
+
+Tab1Section:NewButton("Blade ball 6 [x to enable spam]","Credits to owner",function()
+getgenv().visualizer = true
+loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/RedCircleBlock"))()
+end)
+
+Tab1Section:NewButton("Blade ball 7","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ToTaiVn/BingBong/main/AllGames"))()
+end)
+
+local Tab1Section = Tab1:NewSection("Bed wars")
+
+Tab1Section:NewButton("bedwars 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end)
+
+Tab1Section:NewButton("bedwars 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/OWJBWKQLAISH/Inferno-X/main/inferno%20X%20V2"))()
+end)
+
+Tab1Section:NewButton("bedwars 3","Credits to owner",function()
+loadstring(game:HttpGet("https://gist.githubusercontent.com/DeveloperMikey/2b8ee3d5a38c56c2cc1db72554850384/raw/bedwar.lua", true))()
+end)
+
+Tab1Section:NewButton("bedwars 4","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Technoraids/Amberware/main/RobloxTelanthricBedwars"))()
+end)
+
+Tab1Section:NewButton("bedwars 5","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/joeengo/Future/main/loadstring.lua', true))()
+end)
+
+Tab1Section:NewButton("bedwars 6","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/OWJBWKQLAISH/Inferno-X/main/inferno%20X%20V2"))()
+end)
+
+local Tab1Section = Tab1:NewSection("Jailbreak")
+
+Tab1Section:NewButton("Jailbreak 1","Credits to owner",function()
+loadstring(game:HttpGet("https://scriptblox.com/raw/Jailbreak-Vynixius-1175"))()
+end)
+
+Tab1Section:NewButton("Jailbreak 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Pxsta72/ProjectAuto/main/free"))()
+end)
+
+Tab1Section:NewButton("Jailbreak 3","Credits to owner",function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5d4b0843f800d5dcac07568e18190b7e.lua"))()
+end)
+
+Tab1Section:NewButton("Jailbreak 4","Credits to owner",function()
+loadstring(game:HttpGet("https://scriptblox.com/raw/Jailbreak-Sensation-7024"))()
+end)
+
+Tab1Section:NewButton("Jailbreak 5","Credits to owner",function()
+loadstring(game:HttpGet("https://scriptblox.com/raw/Jailbreak-Vynixius-1175"))()
+end)
+
+Tab1Section:NewButton("Jailbreak 6","Credits to owner",function()
+loadstring(game:HttpGet("https://scriptblox.com/raw/Jailbreak-DevilWare-Script-7692"))()
+end)
+
+local Tab1Section = Tab1:NewSection("Murder mystery 2")
+
+Tab1Section:NewButton("mm2 1","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Pa1nx/RRCreations/main/MurdererMystery2'))()
+end)
+
+Tab1Section:NewButton("mm2 2","No description",function()
+getgenv().mainKey = "nil";
+ 
+local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https\58//api.eclipsehub.xyz/auth";c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+end)
+
+Tab1Section:NewButton("mm2 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/danielontopp/scripts/main/mm2",true))()
+end)
+
+Tab1Section:NewButton("mm2 4","Credits to owner",function()
+local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+end)
+
+Tab1Section:NewButton("mm2 5","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/vwSaraa/LunarHub/main/mm2"))()
+end)
+
+Tab1Section:NewButton("mm2 6","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Jxys3rrV/jaydens-hub/main/script'))();
+end)
+
+Tab1Section:NewButton("mm2 7","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/13B8B/NEXUS/main/loadstring'))()
+end)
+
+local Tab1Section = Tab1:NewSection("Pet sim x")
+
+Tab1Section:NewButton(" Pet Simulator X  1","Credits to owner",function()
+getgenv().key = "projectWBIsAwesomeG8J7GJ678PY"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Main.lua"))()
+end)
+
+Tab1Section:NewButton("Pet Simulator X  2","Credits to owner",function()
+loadstring(game:HttpGetAsync("https://blacktrap.org/blacktrap/users/checkpoint/Auth.txt"))()
+end)
+
+Tab1Section:NewButton(" Pet Simulator X 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BadScripters/CloudHub/main/hub"))()
+end)
+
+Tab1Section:NewButton(" Pet Simulator X  4 (key in desc)","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NukeVsCity/TheALLHACKLoader/main/NukeLoader"))()
+end)
+
+local Tab1Section = Tab1:NewSection("Thouch Soccer")
+
+Tab1Section:NewButton("Thouch soccer 1","Credits to owner",function()
+loadstring(game:HttpGet('https://pastebin.com/raw/gDPPkGxT'))()
+  end)
+
+Tab1Section:NewButton("Thouch soccer 2","Credits to owner",function()
+loadstring(game:HttpGet('https://pastebin.com/raw/gDPPkGxT'))()
+  end)
+
+Tab1Section:NewButton("Thouch soccer 3","Credits to owner",function()
+loadstring(game:HttpGet('https://pastebin.com/raw/gDPPkGxT'))()
+  end)
+
+local Tab1Section = Tab1:NewSection("Bee swarm")
+
+Tab1Section:NewButton("Bee swarm  1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/infinitylua/Luascripts/main/KJFsdEj8sXrja.lua"))()
+end)
+
+Tab1Section:NewButton("Bee swarm  2","Credits to owner",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/AltsegoD/script/master/BeeSwarmSimulator.lua')))()
+end)
+
+Tab1Section:NewButton("Bee swarm  3","Credits to owner",function()
+loadstring(game:GetObjects("rbxassetid://4384103988")[0X1].Source)("Pepsi Swarm")
+end)
+
+Tab1Section:NewButton("Bee swarm  4","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/Histy"))()
+end)
+
+Tab1Section:NewButton("Bee swarm  5","Credits to owner",function()
+loadstring(game:HttpGet('https://s.kometa.ga/kometa.lua'))()
+end)
+
+local Tab1Section = Tab1:NewSection("Arsenal")
+
+Tab1Section:NewButton("Arsenal 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/PWNERHUB.lua"))();
+end)
+
+Tab1Section:NewButton("Arsenal 2","No description",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ccxmIcal/cracks/main/strikehub.lua"))()
+end)
+
+Tab1Section:NewButton("Arsenal 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/YellowGreg/Loadstring/main/arsenal4.lua"))()
+end)
+
+Tab1Section:NewButton("Arsenal 4","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/BoltsHubV5"))()
+end)
+
+Tab1Section:NewButton("Arsenal 5","Credits to owner",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))()
+end)
+
+Tab1Section:NewButton("Arsenal 6","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/YellowGreg/Loadstring/main/arsenal4.lua"))()
+end)
+
+Tab1Section:NewButton("Arsenal 7","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+end)
+
+Tab1Section:NewButton("Arsenal 8","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xandudiscord/vestra/main/loader.lua"))()
+end)
+
+local Tab1Section =
+Tab1:NewSection("Big Paintball")
+
+Tab1Section:NewButton("BIG Paintball 1 ","Credits to owner",function()
+loadingstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
+Tab1Section:NewButton("BIG Paintball 2 ","Credits to owner",function()
+local httpget=request or http_request or(http and http.request)or(syn and syn.request)
+loadstring(httpget({Url="https://raw.githubusercontent.com/AndrewDarkyy/NOWAY/main/darkyyware.lua",Method="GET"}).Body)()
+end)
+
+Tab1Section:NewButton("BIG Paintball 3 ","Credits to owner",function()
+loadstring(game:HttpGet("https://realzzhub.xyz/script.lua"))()
+end)
+
+Tab1Section:NewButton("BIG Paintball 4 ","Credits to owner",function()
+local a="https://eternityhub.xyz/Script"local b=a.."/Eternity.lua"loadstring(game:HttpGet(b))()
+end)
+
+Tab1Section:NewButton("BIG Paintball 5","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/radjahfromdiscord/iNEXT/main/source"))()
+end)
+
+Tab1Section:NewButton("BIG Paintball 6","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LeakMaster/Dark-Hub-V4.1/main/Big_Paintball.lua"))()
+end)
+
+local Tab1Section = Tab1:NewSection("Breaking Point")
+
+
+Tab1Section:NewButton("Breaking Point 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ColdStep2/Breaking-Point-Funny-Squid-Hax/main/Breaking%20Point%20Funny%20Squid%20Hax",true))();
+end)
+
+Tab1Section:NewButton("Breaking Point 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MostafaXc00dy/MostafaXc00dy/main/OutlawsHub/Free/V6.lua"))()
+end)
+
+Tab1Section:NewButton("Breaking Point 3","Credits to owner",function()
+getgenv().AutoFarm = true --enables / disables AutoFarm
+getgenv().ServerHop = false --enables / disables server hop, add to autoexec if you enable this.
+loadstring(game:HttpGet('https://raw.githubusercontent.com/2vsh/breakingpoint/main/mainscript.lua'))()
+end)
+
+Tab1Section:NewButton("Breaking Point 4","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MostafaXc00dy/MostafaXc00dy/main/Outlaws%20Hub/Breaking%20Point%20V7.lua"))()
+end)
+
+local Tab1Section = Tab1:NewSection("Breaking In Sotry")
+
+Tab1Section:NewButton("Breaking in story 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RubyBoo4life/break-in-v1/main/.gitignore"))();
+end)
+
+Tab1Section:NewButton("Breaking in story 2","Credits to owner",function()
+loadstring(Game:HttpGet("https://raw.githubusercontent.com/Ginxys/Break-In/main/Break-in-2/Script.Lua"))()
+end)
+
+Tab1Section:NewButton("Breaking in story 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RScriptz/RobloxScripts/main/BreakIn2.lua"))()
+end)
+
+Tab1Section:NewButton("Breaking in story 4","Credits to owner",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/JCWALTth"))()
+end)
+
+local Tab1Section = Tab1:NewSection("Murder Mystery 2")
+
+Tab1Section:NewButton("Murder mystery2 1","Credits to owner",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/MarsQQ/ScriptHubScripts/master/MM2%20Admin%20Panel'),true))()
+end)
+
+Tab1Section:NewButton("Murder mystery2 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Amenteso/robloxscripts/main/Key.lua",true))()
+end)
+
+Tab1Section:NewButton("Murder mystery2 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Eblan19/875578/main/ERA-Hub"))()
+end)
+
+Tab1Section:NewButton("Murder mystery2 4","Credits to owner",function()
+local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+end)
+
+Tab1Section:NewButton("Murder mystery2 5","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/vwSaraa/LunarHub/main/mm2"))()
+end)
+
+Tab1Section:NewButton("Murder mystery2 6","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Jxys3rrV/jaydens-hub/main/script'))();
+end)
+
+Tab1Section:NewButton("Murder mystery2 8","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/13B8B/NEXUS/main/loadstring'))()
+end)
+
+local Tab1Section = Tab1:NewSection("Da Hood")
+
+Tab1Section:NewButton("Da Hood  1","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
+end)
+
+Tab1Section:NewButton("Da Hood  2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Zinzs/luascripting/main/canyoutellitsadahoodscriptornot.lua"))()
+end)
+
+Tab1Section:NewButton("Da Hood 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
+end)
+
+Tab1Section:NewButton("Da Hood 4","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Haihellos/skidded-enclosed-gui/main/message.txt"))()
+end)
+
+Tab1Section:NewButton("Da Hood  5","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/nyulachan/nyula/main/nyuladhm", true))()
+end)
+
+Tab1Section:NewButton("Da Hood  6","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Venomscript/Venom/main/1.0'))()
+end)
+
+Tab1Section:NewButton("Da Hood  7","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/spacexrandom/Lua/main/DaHood", true))()
+end)
+
+local Tab1Section = Tab1:NewSection("evade")
+
+Tab1Section:NewButton("evade 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Evade"))()
+end)
+
+Tab1Section:NewButton("evade 2","Credits to owner",function()
+getgenv().boothsnipe = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Mainstring.lua"))()
+end)
+
+Tab1Section:NewButton("evade 3","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/zReal-King/Evade/main/Main.lua'))()
+end)
+
+Tab1Section:NewButton("evade 4","Credits to owner",function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/Robobo2022/script/main/Main.lua"), true))()
+end)
+
+Tab1Section:NewButton("evade 5","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Evade/main.lua"))()
+end)
+
+local Tab1Section = Tab1:NewSection("Build A Boat For Treasure")
+
+Tab1Section:NewButton("Build A Boat For Treasure 1","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/XRoLLu/UWU/main/BUILD%20A%20BOAT%20FOR%20TREASURE.lua'))()
+end)
+
+Tab1Section:NewButton("Build A Boat For Treasure 2","Credits to owner",function()
+getgenv().keysys = "Boat Blitz V1"
+--[[Custom Theme]]--
+getgenv().Themes_Enabled = false
+--[[Custom Theme Settings]]--
+getgenv().Buttons_Color = Color3.fromRGB(32, 32, 32)
+getgenv().Misc_Color = Color3.fromRGB(25, 25, 25)
+getgenv().Highlighting_Color = Color3.fromRGB(60, 60, 60)
+getgenv().Text_Color = Color3.fromRGB(240, 240, 240)
+getgenv().Sections_Color = Color3.fromRGB(150, 150, 150)
+getgenv().Divider_Color = Color3.fromRGB(60, 60, 60)
+--[[Loadstring]]--
+loadstring(game:HttpGet("https://gamingresources.github.io/BoatBlitz.lua"))()
+end)
+
+Tab1Section:NewButton("Build A Boat For Treasure 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/max2007killer/auto-build-not-limit/main/autobuild.txt"))()
+end)
+
+local Tab1Section = Tab1:NewSection("Tower of hell")
+
+Tab1Section:NewButton("Tower of Hell 1","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/VectorXinside/tower/main/towerofhell.lua'))()
+end)
+
+Tab1Section:NewButton("Tower of Hell 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dqvh/dqvh/main/SprinHub",true))()
+end)
+
+Tab1Section:NewButton("Tower of Hell 3","Credits to owner",function()
+loadstring(game:HttpGet('https://pastebin.com/raw/BbVHjH56'))()
+end)
+
+local Tab1Section = Tab1:NewSection("Doors")
+
+Tab1Section:NewButton("Doors 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Doors"))()
+end)
+
+Tab1Section:NewButton("Doors 2","Credits to owner",function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/R8QMbhzv"))()
+end)
+
+Tab1Section:NewButton("Doors 3","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/DeividComSono/Scripts/main/Scanner.lua'))()
+end)
+
+Tab1Section:NewButton("Doors 4","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/plamen6789/UtilitiesHub/main/UtilitiesGUI'))()
+end)
+
+Tab1Section:NewButton("Doors 5","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ShadowScripts4Roblox/PROTECTEDLUA/main/Scripts/DOORS/Loader52.lua'))()
+end)
+
+Tab1Section:NewButton("Doors 6","Credits to owner",function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/poopdoors_edited/main/poopdoors_edited.lua"),true))()
+end)
+
+Tab1Section:NewButton("Doors 7[has key]","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RiseValco/keybypasses/main/projectwd.lua"))()
+end)
+
+local Tab1Section = Tab1:NewSection("Zombie Attack")
+
+Tab1Section:NewButton("Zombie Attack 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Zombie%20Attack"))()
+end)
+
+Tab1Section:NewButton("Zombie Attack 2","Credits to owner",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/RTrade/Voidz/main/Games.lua'),true))()
+end)
+
+Tab1Section:NewButton("Zombie Attack 3","Credits to owner",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/zeuise0002/SSSWWW222/main/README.md'),true))()
+end)
+
+Tab1Section:NewButton("Zombie Attack 4","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/YellowGreg/Zombie-Attack-Gui/main/Zombie%20Attack%20V1.lua"))()
+end)
+
+Tab1Section:NewButton("Zombie Attack 5","Credits to owner",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/zeuise0002/SSSWWW222/main/README.md'),true))()
+end)
+
+local Tab1Section = Tab1:NewSection("Legends Of Speed")
+
+Tab1Section:NewButton("Legends Of Speed 1","Credits to owner",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/1iMHrZ50", true))()
+end)
+
+Tab1Section:NewButton("Legends Of Speed 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Loader.lua"))()
+end)
+
+Tab1Section:NewButton("Legends Of Speed 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fareljr1/Hub/main/Loader"))()
+end)
+
+
+
+local Tab1Section = Tab1:NewSection("Arm Wrestling")
+
+Tab1Section:NewButton("Arm Wrestling 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/1Toxin/flame/main/loader"))()
+end)
+
+Tab1Section:NewButton("Arm Wrestling 2","Credits to owner",function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/99d16edc79729a038994f85ce7335971.lua"))()
+end)
+
+Tab1Section:NewButton("Arm Wrestling 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Kenniel123/Arm-wrestle-v3/main/Arm%20wrestle%20v3",true))();
+end)
+
+Tab1Section:NewButton("Arm Wrestling 4","Credits to owner",function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/99d16edc79729a038994f85ce7335971.lua"))()
+end)
+
+Tab1Section:NewButton("Arm Wrestling 5","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Kenniel123/Arm-wrestle-v3/main/Arm%20wrestle%20v3",true))();
+end)
+
+Tab1Section:NewButton("Arm Wrestling 6","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/limaspeedy/limaspeedy/main/HubLDS"))()
+end)
+
+Tab1Section:NewButton("Arm Wrestling 7","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Saitamahaah/SaitaHub/main/NebulaHub"))()
+end)
+
+local Tab1Section = Tab1:NewSection("Starving Artists (DONATION GAME)")
+
+Tab1Section:NewButton("Starving Artists (DONATION GAME) 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Jeux45/Starving-Artist-script/main/Script", true))()
+end)
+
+Tab1Section:NewButton("Starving Artists (DONATION GAME) 2","Credits to owner",function()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Paradox2063/vortex/main/hub"))()
+end)
+
+Tab1Section:NewButton("Starving Artists (DONATION GAME) 3","Credits to owner",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/SGE3mr9B", true))()
+end)
+
+local Tab1Section = Tab1:NewSection("Brookhaven")
+
+Tab1Section:NewButton("Brookhaven 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+end)
+
+Tab1Section:NewButton("Brookhaven 2","Credits to owner",function()
+loadstring(game:HttpGet("https://gist.githubusercontent.com/TurkOyuncu99/60832e7d04766a6381194d7502fbb1e8/raw/fbecd900a62e1fa054998f02084475b6c4ed8f18/woah", true))()
+end)
+
+Tab1Section:NewButton("Brookhaven 3","Credits to owner",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/eHDQPz6v"))()
+end)
+
+Tab1Section:NewButton("Brookhaven 4","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+end)
+
+Tab1Section:NewButton("Brookhaven 5","Credits to owner",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJStyles123/BrookhavenRP/main/CandyFarm'),true))()
+end)
+
+Tab1Section:NewButton("Brookhaven 6","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MetabV2/BrookHaven-Script/main/MetabV2"))()
+end)
+
+local Tab1Section = Tab1:NewSection("Ohio.")
+
+Tab1Section:NewButton("Ohio. 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Ohio1/main/Robloxgame1"))()
+end)
+
+Tab1Section:NewButton("Ohio. 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rxn-xyz/Ohio./main/Ohio.lua",true))()
+end)
+
+Tab1Section:NewButton("Ohio. 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Mstir16/legocheats/main/archive/Ohio./script.lua"))()
+end)
+
+Tab1Section:NewButton("Ohio. 4","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/sunexn/ohio./main/ohio.lua",true))()
+end)
+
+Tab1Section:NewButton("Ohio. 5","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Mstir16/legocheats/main/archive/Ohio./script.lua"))()
+end)
+
+local Tab1Section = Tab1:NewSection("Natrual Disaster")
+
+Tab1Section:NewButton("Natrual disaster 1","Credits to owner",function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/Yarik312/DarkWare/main/MainLoader"), true))()
+end)
+
+Tab1Section:NewButton("Natrual disaster 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringUjHI6RQpz2o8", true))()
+end)
+
+Tab1Section:NewButton("Natrual disaster 3","Credits to owner",function()
+loadstring(game:HttpGet('https://gitlab.com/wspcontr/onemorehub/-/raw/main/scriptloader.lua'))()
+end)
+
+local Tab1Section = Tab1:NewSection("Super soccer league")
+
+Tab1Section:NewButton("Super League Soccer 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Soccer5/main/SuperLeague"))()
+end)
+
+Tab1Section:NewButton("Super League Soccer 2","Credits to owner",function()
+loadstring(game:HttpGet('https://pastebin.com/raw/gDPPkGxT'))()
+end)
+
+Tab1Section:NewButton("Super League Soccer 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/AutoGoal/main/TouchFootball"))()
+end)
+
+local Tab1Section = Tab1:NewSection("Tps Street Soccer")
+
+Tab1Section:NewButton("Tps Street Soccer 1","Credits to owner",function()
+loadingstring(game:HttpsGet('https://raw.githubusercontent.co./hussain132323/My-Scripts/main/street%20Soccer'))()
+end)
+
+Tab1Section:NewButton("Tps Street Soccer 2","Credits to owner",function()
+loadstring(game:HttpGet('https://paste.ee/r/fOUMW'))()
+end)
+
+Tab1Section:NewButton("Tps Street Soccer 3","Credits to owner",function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/DDIBASAAIB/tpsfreescript/main/obfsctpsfree.lua")() 
+end)
+
+local Tab1Section = Tab1:NewSection("Tps ultimate soccer")
+
+Tab1Section:NewButton("Tps ultimate 1 key [ultimate69#]","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yBloodz/TPS-script/main/Tps%20ult%20reach"))()
+end)
+
+Tab1Section:NewButton("Tps ultimate 2 [just use reach]","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/hussain1323232234/My-Scripts/main/Street%20Soccer'))()
+end)
+
+local Tab1Section = Tab1:NewSection("End")
+
+local Tab5Section = Tab5:NewSection("Kat")
+
+Tab5Section:NewButton("Kat 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming/Kat12/main/Kat"))()
+end)
+
+Tab5Section:NewButton("Kat 2","Credits to owner",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))()
+end)
+
+Tab5Section:NewButton("Kat 3 [key:DGCommunity_858]","Credits to owner",function()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Margman/whynot/main/Knife%20Ability%20Test%202022"))() 
+end)
+
+Tab5Section:NewButton("Kat 4","Credits to owner",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/lxnnydev/PublicScripts/main/limexkat.lua'),true))()
+end)
+
+Tab5Section:NewButton("Kat 5","Credits to owner",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))()
+end)
+
+local Tab5Section = Tab5:NewSection("Ragdoll Engine")
+
+Tab5Section:NewButton("Ragdoll Engine 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/i4mitty/MysteryHub/main/MysteryHub%20-%20Ragdoll%20Engine.lua"))() 
+end)
+
+Tab5Section:NewButton("Ragdoll Engine 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Nrg..."))()
+end)
+
+Tab5Section:NewButton("Ragdol Engine 3","Credits to owner",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/ggshizuru/myScriptHub/main/ShizzuruHub.1.lua'),true))()
+end)
+
+Tab5Section:NewButton("Ragdoll Engine 4","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/n0kc/AtomicHub/main/Script.lua'))()
+end)
+
+Tab5Section:NewButton("Ragdoll Engine 5","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/H20CalibreYT/SystemBroken/main/script"))() 
+end)
+
+local Tab5Section = Tab5:NewSection("Anime fighters Simulator")
+
+Tab5Section:NewButton("Anime fighters simulator 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/diepedyt/bui/main/temporynewkeysystem.lua"))()
+end)
+
+Tab5Section:NewButton("Anime fighters simulator 2","Credits to owner",function()
+repeat wait() until game:IsLoaded()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Binintrozza/yutv2e/main/ACS"))()
+end)
+
+Tab5Section:NewButton("Anime fighters simulator 3","No description",function()
+repeat wait() until game:IsLoaded()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Bin..."))()
+end)
+
+Tab5Section:NewButton("Anime fighters simulator 4","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ZaRdoOx/Loader/main/PlatiniumLoader"))()
+end)
+
+local Tab5Section = Tab5:NewSection("Breaking story 2")
+
+Tab5Section:NewButton("Breaking story 2 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RScriptz/RobloxScripts/main/BreakIn2.lua"))()
+end)
+
+Tab5Section:NewButton("Breaking story 2 2","Credits to owner",function()
+loadstring(game:HttpGet("https://freenote.biz/raw/80jXm2Q0a7",true))()
+end)
+
+Tab5Section:NewButton("Breaking story 2 3","Credits to owner",function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/poopdoors_edited/main/poopdoors_edited.lua"),true))()
+end)
+
+Tab5Section:NewButton("Breaking story 2 4","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Quantiium/DoorsScript/main/LoadUI's.lua"))()
+end)
+
+local Tab5Section = Tab5:NewSection("the strongest battlegrounds")
+
+Tab5Section:NewButton("The strongest battle grounds 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ZawTheChawMan/Obfuscator/main/The_Strongest_Battlegrounds_Script"))()
+end)
+
+Tab5Section:NewButton("The strongest battle grounds 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/SaitamaBattlegrounds.lua"))()
+end)
+
+Tab5Section:NewButton("The strongest battle grounds 3","Credits to owner",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/1Gp9c57U"))()
+end)
+
+Tab5Section:NewButton("The strongest battle grounds 4","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Strongest/main/Battlegrounds77"))()
+end)
+
+local Tab5Section = Tab5:NewSection("Westbound")
+
+Tab5Section:NewButton("Westbound 1","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/StupidProAArsenal/main/main/stupid%20guy%20ever%20in%20the%20west',true))()
+end)
+
+Tab5Section:NewButton("Westbound 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Drrushh/Drrushh/main/Kdom",true))(); 
+end)
+
+Tab5Section:NewButton("Westbound 3","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/StupidProAArsenal/main/main/stupid%20guy%20ever%20in%20the%20west',true))()
+end)
+
+Tab5Section:NewButton("Westbound 4","Credits to owner",function()
+loadstring(game.HttpGet(game,"https://raw.githubusercontent.com/Exunys/westbound.pro-Utilites/main/Main.lua"))()
+end)
+
+local Tab5Section = Tab5:NewSection("Saber showdown")
+
+Tab5Section:NewButton("Saber showdown 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Saber/main/Showdown"))()
+end)
+
+Tab5Section:NewButton("Saber showdown 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NeptuneMadeIt100/Saber-Showdown/main/johajoha", true))()
+end)
+
+local Tab5Section = Tab5:NewSection("Haze piece")
+
+Tab5Section:NewButton("Haze piece 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mo061/MysticHub/main/README.md"))()
+end)
+
+Tab5Section:NewButton("Haze piece 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/Belihunter"))()
+end)
+
+Tab5Section:NewButton("Haze piece 3","Credits to owner",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/ThundarZ/Welcome/main/Main/Loader/AllGame.lua')))()
+end)
+
+local Tab5Section = Tab5:NewSection("Shadow boxing")
+
+Tab5Section:NewButton("Shadow boxing 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/ShadowBoxing"))()
+end)
+
+Tab5Section:NewButton("Shadow boxing 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xtrey10x/xtrey10x-hub/main/shadow"))()
+end)
+
+local Tab5Section = Tab5:NewSection("Slap battles")
+
+Tab5Section:NewButton("Slap battles 1","Credits to owner",function()
+loadstring(game:HttpGet("https://vantra.c /api/script/get?placeid=MainLoader"))()
+end)
+
+Tab5Section:NewButton("Slap battles 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/candyfarm"))()
+end)
+
+Tab5Section:NewButton("Slap battles 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomScriptr3/gggggggg/main/lolez.txt", true))()
+end)
+
+Tab5Section:NewButton("Slap battles 4","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Blackie-coke/InfiniteWare/main/KS.lua", true))()
+end)
+
+local Tab5Section = Tab5:NewSection("Punching simulator")
+
+Tab5Section:NewButton("Punching simulator 1","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/PerfectusMim/dbevo/main/asfasfasfasf'))()
+end)
+
+Tab5Section:NewButton("Punching simulator 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JustAP1ayer/PlayerHubOther/main/PlayerHubPunchingSimulator.lua", true))()
+end)
+
+Tab5Section:NewButton("Punching simulator 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Angeelvxg/PunchSimulator/main/PunchSimulator.lua",true))()
+end)
+
+Tab5Section:NewButton("Punching simulator 4","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0PUNCH"))()
+end)
+
+local Tab5Section = Tab5:NewSection("Rebirth champion x")
+
+Tab5Section:NewButton("Rebirth champion x 1","Credits to owner",function()
+loadstring(game:HttpGet('https://scripts.luawl.com/hosted/4455/19170/GhostWare.lua'))()
+end)
+
+Tab5Section:NewButton("Rebirth champion x 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JellyBagBeans/CelestialHub/main/GameLoader"))()
+end)
+
+Tab5Section:NewButton("Rebirth champion x 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LaDamage/releases/main/Rebirth-Champions-X.lua"))()
+end)
+
+Tab5Section:NewButton("Rebirth champion x 4","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/KrystekYTpv/Scripts/main/RebirthChampionsX.lua", true))()
+end)
+
+local Tab5Section = Tab5:NewSection("under ground war")
+
+Tab5Section:NewButton("Under ground war 1","Credits to owner",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/U9WBdeFe"))()
+end)
+
+Tab5Section:NewButton("Under ground war 2","Credits to owner",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/U9WBdeFe"))()
+end)
+
+Tab5Section:NewButton("Under ground war 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/jj123llol/multi-hub/main/Multi",true))()
+end)
+
+local Tab5Section = Tab5:NewSection("combat warriors")
+
+Tab5Section:NewButton("combat warriors 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rblxscriptsnet/rblxhub/main/rblxhub.lua"))()
+end)
+
+Tab5Section:NewButton("combat warriors 2","Credits to owner",function()
+loadstring(game:HttpGet('https://itots.tk/zaphub/ZapHubFreeVersion'))()
+end)
+
+Tab5Section:NewButton("combat warriors 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ditchmethis/Lumware-Combat-Warriors-/main/lumware_updated.lua"))()
+end)
+
+Tab5Section:NewButton("combat warriors 4","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/ticks"))()
+end)
+
+Tab5Section:NewButton("combat warriors 5","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ditchmethis/Lumware-Combat-Warriors-/main/lumware_updated.lua"))()
+end)
+
+local Tab5Section = Tab5:NewSection("muscle legends")
+
+Tab5Section:NewButton("muscle legends 1","Credits to owner",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Muscle-Legends'),true))()
+end)
+
+Tab5Section:NewButton("muscle legends 2","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/jynzl/main/main/Musclas%20Legenos.lua'))()
+end)
+
+Tab5Section:NewButton("muscle legends 3","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/jynzl/main/main/Musclas%20Legenos.lua'))()
+end)
+
+local Tab5Section = Tab5:NewSection("rainbow friends")
+
+Tab5Section:NewButton("rainbow friends 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/FrightenedHub/main/Loader.lua", true))()
+end)
+
+Tab5Section:NewButton("rainbow friends 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/FrightenedHub/main/Loader.lua", true))()
+end)
+
+Tab5Section:NewButton("rainbow friends 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Keparetiolpxe/rbxscript/main/RainbowFriendsKEPA"))()
+end)
+
+Tab5Section:NewButton("rainbow friends 4","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Ihaveash0rtnamefordiscord/BorkWare/main/Scripts/' .. game.GameId .. ".lua"))(' Watermelon ? ')
+end)
+
+local Tab5Section = Tab5:NewSection("Obby but youre on a bike")
+
+Tab5Section:NewButton("Obby but youre on a bike 1","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0ObbyBike'))()
+end)
+
+Tab5Section:NewButton("Obby but youre on a bike 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/qxxpc/Script/main/Obby%20But%20You're%20on%20a%20Bike.lua"))()
+end)
+
+local Tab5Section = Tab5:NewSection("type or die")
+
+Tab5Section:NewButton("type or die 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/toosiwhip/type-or-die/main/statueware.lua"))()
+end)
+
+Tab5Section:NewButton("type or die 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/notxkid/typeordiescript/main/main.lua"))()
+end)
+
+Tab5Section:NewButton("type or die 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/notxkid/Quadra/main/loader.lua"))()
+end)
+
+local Tab5Section = Tab5:NewSection("shark bite 2")
+
+Tab5Section:NewButton("shark bite2 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FlmesCoding/CandyHubGames/main/SHARKBITE%202.lua"))()
+end)
+
+Tab5Section:NewButton("shark bite2 2","Credits to owner",function()
+loadstring(game:HttpGet("https://catware.vercel.app", true))()
+end)
+
+Tab5Section:NewButton("shark bite2 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/samuelrblx/Bruhnhe/main/Hub"))()
+end)
+
+Tab5Section:NewButton("shark bite2 4","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/SleeksScripts/Sharkbite-2-script/main/Script'))()
+end)
+
+Tab5Section:NewButton("shark bite2 5","Credits to owner",function()
+loadstring(game:HttpGet("https://shattered-gang.lol/scripts/sharkbite_2.lua"))()
+end)
+
+local Tab5Section = Tab5:NewSection("jenga")
+
+Tab5Section:NewButton("jenga 1","Credits to owner",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/Z46FpSD0"))();
+end)
+
+Tab5Section:NewButton("jenga 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Jenga-Key/main/JengaUI"))()
+end)
+
+Tab5Section:NewButton("jenga 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/Jenga"))()
+end)
+
+Tab5Section:NewButton("jenga 4","Credits to owner",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/dkT72sKX", true))()
+end)
+
+local Tab5Section = Tab5:NewSection("Breaking story 1")
+
+Tab5Section:NewButton("Breaking story 1, 1","Credits to owner",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/Wg8pEW3Z", true))()
+end)
+
+Tab5Section:NewButton("Breaking story 1, 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Proxima-Hub/main/Main.lua"))()
+end)
+
+Tab5Section:NewButton("Breaking story 1, 3","Credits to owner",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/Wg8pEW3Z", true))()
+end)
+
+local Tab5Section = Tab5:NewSection("Strong man simulator")
+
+Tab5Section:NewButton("Strong man simulator 1","Credits to owner",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/XxuErEbi", true))()
+end)
+
+Tab5Section:NewButton("Strong man simulator 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0strongman", true))()
+end)
+
+Tab5Section:NewButton("Strong man simulator 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/itsnoctural/Destiny/main/loader.lua",true))()
+end)
+
+local Tab5Section = Tab5:NewSection("lumber tycoon")
+
+Tab5Section:NewButton("lumber tycoon 1","Credits to owner",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/XxuErEbi", true))()
+end)
+
+Tab5Section:NewButton("lumber tycoon 2","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ItsEcstasy/Nightfall/main/Versions/2.10.4'))()
+end)
+
+Tab5Section:NewButton("lumber tycoon 3","Credits to owner",function()
+loadstring(game:HttpGetAsync("https://cdn.applebee1558.com/bark/bark.lua"))("2022 more like twenty-twenty-too")
+end)
+
+Tab5Section:NewButton("lumber tycoon 4","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/frencaliber/LuaWareLoader.lw/main/luawareloader.wtf",true))()("JoinDiscordForGiveAwaysAndUpdates")
+end)
+
+Tab5Section:NewButton("lumber tycoon 5","Credits to owner",function()
+loadstring(Game:HttpGet("https://raw.githubusercontent.com/stepforintructions/stepshoppublic/main/PUBLIC-UPDATED"))()
+end)
+
+Tab5Section:NewButton("lumber tycoon 6[key:DIKeTLkWjspPRhVdMPHGlvIHLbhHUzmwpG]","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/666TranZit666/rewrite/main/Dazed%20X'))()
+end)
+
+Tab5Section:NewButton("lumber tycoon 7","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NOOBARMYSCRIPTER/NOOBARMYSCRIPTER/main/AXE%20LOOP%20SCRIPT", true))()
+end)
+
+Tab5Section:NewButton("lumber tycoon 8","Credits to owner",function()
+loadstring(game:HttpGetAsync'https://ancestordevelopment.wtf/Ancestor')('Ancestor V3 Winning :D');
+end)
+
+Tab5Section:NewButton("lumber tycoon 9","Credits to owner",function()
+loadstring(game:HttpGet("https://drizzy.wtf//PinkX/Script"))()
+end)
+
+Tab5Section:NewButton("lumber tycoon 10 [dupe]","Credits to owner",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/ghRqqbLb"))()
+end)
+
+Tab5Section:NewButton("lumber tycoon 11","Credits to owner",function()
+_G.Christmas_Theme = false
+
+loadstring(game:HttpGet("https://therealcipher.github.io/Cipher-X/scripts/Obf_1.lua"))()
+end)
+
+Tab5Section:NewButton("lumber tycoon 12","Credits to owner",function()
+loadstring(game:HttpGet("https://gist.githubusercontent.com/zentoll/3b57bdbedaa69d35c2e5f0691ffc008f/raw/", true))()
+end)
+
+local Tab5Section = Tab5:NewSection(" 1% Win obby")
+
+Tab5Section:NewButton(" 1% Win obby 1","Credits to owner",function()
+loadstring(game:HttpGet('https://pastebin.com/raw/JR8Bcmsv'))()
+end)
+
+Tab5Section:NewButton(" 1% Win obby 2","Credits to owner",function()
+loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/13389049867"))()
+end)
+
+Tab5Section:NewButton(" 1% Win obby 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/emirh4ntnc/99-Fail-Impossible-Obby-Script/main/lua"))()
+end)
+
+Tab5Section:NewButton(" 1% Win obby 4","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/WinterDinder/Running-Simulator/main/Main", true))()
+end)
+
+local Tab5Section = Tab5:NewSection("Runs target simulatot")
+
+Tab5Section:NewButton("runs target Simulator 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0Running"))()
+end)
+
+local Tab5Section = Tab5:NewSection("broken bones")
+
+Tab5Section:NewButton("broken bones 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DuhwahScripts/BrokenBonesIV/main/source", true))()
+end)
+
+Tab5Section:NewButton("Broken bones 2","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/oShyyyyy/iris-jhub/main/broknebones'))()
+end)
+
+local Tab5Section = Tab5:NewSection("word bomb")
+
+Tab5Section:NewButton("word bomb 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EGX3/GAMES/main/Word%20bomb"))()
+end)
+
+Tab5Section:NewButton("word bomb 2","Credits to owner",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/RTrade/Voidz/main/Games.lua'),true))()
+end)
+
+local Tab5Section = Tab5:NewSection("The survival")
+
+Tab5Section:NewButton("Survival game 1","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Jayiioceanii/Scripthub/main/Aura'))()
+end)
+
+Tab5Section:NewButton("Survival game 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end)
+
+Tab5Section:NewButton("Survival game 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/qxkya/Kya-Ware/main/TheSurvivalGame.lua"))()
+end)
+
+local Tab5Section = Tab5:NewSection("Impossible Glass Bridge")
+
+Tab5Section:NewButton("Impossible Glass Bridge 1","Credits to owner",function()
+while true and task.wait() do
+for i,v in pairs(game:GetService("Workspace")["Glass Bridge"].GlassPane:GetDescendants()) do
+   if v.Name == 'TouchInterest' then
+       v.Parent.Transparency = 1
+       end
+   end
+end
+end)
+
+Tab5Section:NewButton("Impossible Glass Bridge 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/itsnoctural/Utilities/main/Closed/Impossible%20Glass%20Bridge%20Obby.lua"))()
+end)
+
+Tab5Section:NewButton("Impossible Glass Bridge 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/itsnoctural/Utilities/main/Closed/Impossible%20Glass%20Bridge%20Obby.lua"))()
+end)
+
+local Tab5Section = Tab5:NewSection("Counter blox")
+
+Tab5Section:NewButton("Counter blox 1","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Pawel12d/hexagon/main/scripts/CounterBlox.lua', true))()
+end)
+
+Tab5Section:NewButton("Counter blox 2","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/NooVster/404/main/Source'))()
+end)
+
+Tab5Section:NewButton("Counter blox 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fliskScript/jaran.vip/main/free.lua"))()
+end)
+
+Tab5Section:NewButton("Counter blox 4","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ionlol/Hexagon-fixed-for-July-28-Roblox-update-/main/fix"))()
+end)
+
+local Tab5Section = Tab5:NewSection("military tycoon")
+
+Tab5Section:NewButton("military tycoon 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/OopssSorry/OopssHub/main/Loader.lua"))()
+end)
+
+Tab5Section:NewButton("military tycoon 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ufouzzed/WarTycoon/main/ByJMaxeyy"))()
+end)
+
+local Tab5Section = Tab5:NewSection("end")
+
+local Tab7Section = Tab7:NewSection("Skywars")
+
+Tab7Section:NewButton("Skywars 1","Credits to owner",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/zachisfunny/OP-Skywars-Script/main/Script'),true))()
+end)
+
+Tab7Section:NewButton("Skywars 2 [Hawk Hub Key = hawkhubneverdies]","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TheHanki/Hawk/main/Loader", true))()
+end)
+
+Tab7Section:NewButton("Sky wars 3","Credits to owner",function()
+loadstring("\103\97\109\101\46\83\116\97\114\116\101\114\71\117\105\58\83\101\116\67\111\114\101\40\34\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110\34\44\32\123\10\32\32\32\32\84\105\116\108\101\32\61\32\34\77\97\100\101\32\66\121\32\82\121\97\110\32\86\120\98\101\115\34\59\32\10\32\32\32\32\84\101\120\116\32\61\32\34\76\111\97\100\105\110\103\46\46\46\34\59\32\10\32\32\32\32\73\99\111\110\32\61\32\34\104\116\116\112\58\47\47\119\119\119\46\114\111\98\108\111\120\46\99\111\109\47\97\115\115\101\116\47\63\105\100\61\57\54\56\48\54\51\54\50\48\53\34\59\32\10\32\32\32\32\68\117\114\97\116\105\111\110\32\61\32\53\59\10\32\32\32\32\66\117\116\116\111\110\49\32\61\32\34\79\107\34\59\32\32\10\125\41\10\10\119\97\105\116\40\51\41\10\10\108\111\99\97\108\32\76\105\98\114\97\114\121\32\61\32\108\111\97\100\115\116\114\105\110\103\40\71\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\98\108\111\111\100\98\97\108\108\47\45\98\97\99\107\45\117\112\115\45\102\111\114\45\108\105\98\115\47\109\97\105\110\47\119\105\122\97\114\100\34\41\41\40\41\10\108\111\99\97\108\32\80\104\97\110\116\111\109\70\111\114\99\101\115\87\105\110\100\111\119\32\61\32\76\105\98\114\97\114\121\58\78\101\119\87\105\110\100\111\119\40\34\65\117\116\111\32\67\108\105\99\107\34\41\10\10\108\111\99\97\108\32\84\97\98\49\32\61\32\80\104\97\110\116\111\109\70\111\114\99\101\115\87\105\110\100\111\119\58\78\101\119\83\101\99\116\105\111\110\40\34\77\97\105\110\34\41\10\108\111\99\97\108\32\84\97\98\50\32\61\32\80\104\97\110\116\111\109\70\111\114\99\101\115\87\105\110\100\111\119\58\78\101\119\83\101\99\116\105\111\110\40\34\67\114\101\100\105\116\115\34\41\10\10\84\97\98\49\58\67\114\101\97\116\101\66\117\116\116\111\110\40\34\65\117\116\111\32\67\108\105\99\107\34\44\32\102\117\110\99\116\105\111\110\40\41\10\10\40\103\101\116\103\101\110\118\40\41\41\46\67\111\110\102\105\103\32\61\32\123\10\32\91\34\67\108\105\99\107\65\116\116\97\99\107\34\93\32\61\32\116\114\117\101\10\125\10\10\115\112\97\119\110\40\102\117\110\99\116\105\111\110\40\41\10\32\32\32\32\103\97\109\101\58\71\101\116\83\101\114\118\105\99\101\40\34\82\117\110\83\101\114\118\105\99\101\34\41\46\82\101\110\100\101\114\83\116\101\112\112\101\100\58\67\111\110\110\101\99\116\40\102\117\110\99\116\105\111\110\40\41\10\32\32\32\32\32\32\32\32\105\102\32\103\101\116\103\101\110\118\40\41\46\67\111\110\102\105\103\91\39\67\108\105\99\107\65\116\116\97\99\107\39\93\32\116\104\101\110\10\32\32\32\32\32\32\32\32\32\32\32\32\32\112\99\97\108\108\40\102\117\110\99\116\105\111\110\40\41\10\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\103\97\109\101\58\71\101\116\83\101\114\118\105\99\101\39\86\105\114\116\117\97\108\85\115\101\114\39\58\67\97\112\116\117\114\101\67\111\110\116\114\111\108\108\101\114\40\41\10\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\103\97\109\101\58\71\101\116\83\101\114\118\105\99\101\39\86\105\114\116\117\97\108\85\115\101\114\39\58\66\117\116\116\111\110\49\68\111\119\110\40\86\101\99\116\111\114\50\46\110\101\119\40\48\44\49\44\48\44\49\41\41\10\32\32\32\32\32\32\32\32\32\32\32\32\101\110\100\41\10\32\32\32\32\32\32\32\32\101\110\100\10\32\32\32\32\101\110\100\41\10\101\110\100\41\10\101\110\100\41\10\10\84\97\98\49\58\67\114\101\97\116\101\66\117\116\116\111\110\40\34\68\105\115\97\98\108\101\32\65\117\116\111\32\67\108\105\99\107\34\44\32\102\117\110\99\116\105\111\110\40\41\10\10\40\103\101\116\103\101\110\118\40\41\41\46\67\111\110\102\105\103\32\61\32\123\10\32\91\34\67\108\105\99\107\65\116\116\97\99\107\34\93\32\61\32\102\97\108\115\101\10\125\10\10\115\112\97\119\110\40\102\117\110\99\116\105\111\110\40\41\10\32\32\32\32\103\97\109\101\58\71\101\116\83\101\114\118\105\99\101\40\34\82\117\110\83\101\114\118\105\99\101\34\41\46\82\101\110\100\101\114\83\116\101\112\112\101\100\58\67\111\110\110\101\99\116\40\102\117\110\99\116\105\111\110\40\41\10\32\32\32\32\32\32\32\32\105\102\32\103\101\116\103\101\110\118\40\41\46\67\111\110\102\105\103\91\39\67\108\105\99\107\65\116\116\97\99\107\39\93\32\116\104\101\110\10\32\32\32\32\32\32\32\32\32\32\32\32\32\112\99\97\108\108\40\102\117\110\99\116\105\111\110\40\41\10\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\103\97\109\101\58\71\101\116\83\101\114\118\105\99\101\39\86\105\114\116\117\97\108\85\115\101\114\39\58\67\97\112\116\117\114\101\67\111\110\116\114\111\108\108\101\114\40\41\10\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\103\97\109\101\58\71\101\116\83\101\114\118\105\99\101\39\86\105\114\116\117\97\108\85\115\101\114\39\58\66\117\116\116\111\110\49\68\111\119\110\40\86\101\99\116\111\114\50\46\110\101\119\40\48\44\49\44\48\44\49\41\41\10\32\32\32\32\32\32\32\32\32\32\32\32\101\110\100\41\10\32\32\32\32\32\32\32\32\101\110\100\10\32\32\32\32\101\110\100\41\10\101\110\100\41\10\101\110\100\41\10\10\84\97\98\50\58\67\114\101\97\116\101\66\117\116\116\111\110\40\34\77\97\100\101\32\66\121\32\82\121\97\110\32\86\120\98\101\115\34\44\32\102\117\110\99\116\105\111\110\40\41\10\101\110\100\41\10")()
+end)
+
+Tab7Section:NewButton("Sky wars 4","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/RobloxScripts/main/HitboxExpander.lua"))()
+end)
+
+local Tab7Section = Tab7:NewSection("Boxing league")
+
+Tab7Section:NewButton("Boxing league 1","Credits to owner",function()
+repeat task.wait() until game:IsLoaded()
+
+setclipboard("https://discord.gg/PPFYacGb2b")
+print("Join our server! https://discord.gg/PPFYacGb2b")
+
+if game.PlaceId == "3738115442" then
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/CPU-Accelerator/Boxing-League/main/Boxing-Classes/ClassC.lua"), true))()
+elseif game.PlaceId == "4574912733" then
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/CPU-Accelerator/Boxing-League/main/Boxing-Classes/ClassB.lua"), true))()
+
+end
+end)
+
+Tab7Section:NewButton("Boxing league 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yogurtsss/trashs-scripts-obfuscated/main/Boxing%20League", true))()
+end)
+
+Tab7Section:NewButton("Boxing league 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SethProYT/boxing-league-script/main/script"))()
+end)
+
+local Tab7Section = Tab7:NewSection("Flag wars")
+
+Tab7Section:NewButton("Flag wars  1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/kalasthrowaway/stuff/main/flagwars.lua"))()
+end)
+
+Tab7Section:NewButton("Flag wars  2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FreeRobloxScripts/Levis-HUB/main/mdfhg"))()
+end)
+
+Tab7Section:NewButton("Flag wars  3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/kalasthrowaway/stuff/main/flagwars.lua"))()
+end)
+
+Tab7Section:NewButton("Flag wars  4","Credits to owner",function()
+loadstring(game:HttpGet("https://jumblescripts.com/JumbleHub.lua"))()
+end)
+
+Tab7Section:NewButton("Flag wars  5","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Monke90/Lucky-Blocks/main/Monkeyware"))()
+end)
+
+Tab7Section:NewButton("Flag wars  6","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Sol1-xyz/Flag-Wars/main/FlagWars.lua", true))()
+end)
+
+local Tab7Section = Tab7:NewSection("Pick a side")
+
+Tab7Section:NewButton("Pick a side 1","Credits to owner",function()
+getgenv().coinfarm = true
+loadstring(game:HttpGet('https://ithinkimandrew.site/scripts/game-scripts/pick-a-side.lua'))()
+end)
+
+Tab7Section:NewButton("Pick a side 2","Credits to owner",function()
+loadstring("\103\97\109\101\46\83\116\97\114\116\101\114\71\117\105\58\83\101\116\67\111\114\101\40\34\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110\34\44\32\123\10\32\32\32\32\84\105\116\108\101\32\61\32\34\77\97\100\101\32\66\121\32\82\121\97\110\32\86\120\98\101\115\34\59\32\10\32\32\32\32\84\101\120\116\32\61\32\34\76\111\97\100\105\110\103\46\46\46\34\59\32\10\32\32\32\32\73\99\111\110\32\61\32\34\104\116\116\112\58\47\47\119\119\119\46\114\111\98\108\111\120\46\99\111\109\47\97\115\115\101\116\47\63\105\100\61\57\54\56\48\54\51\54\50\48\53\34\59\32\10\32\32\32\32\68\117\114\97\116\105\111\110\32\61\32\53\59\10\32\32\32\32\66\117\116\116\111\110\49\32\61\32\34\79\107\34\59\32\32\10\125\41\10\10\119\97\105\116\40\51\41\10\10\108\111\99\97\108\32\76\105\98\114\97\114\121\32\61\32\108\111\97\100\115\116\114\105\110\103\40\71\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\98\108\111\111\100\98\97\108\108\47\45\98\97\99\107\45\117\112\115\45\102\111\114\45\108\105\98\115\47\109\97\105\110\47\119\105\122\97\114\100\34\41\41\40\41\10\108\111\99\97\108\32\80\104\97\110\116\111\109\70\111\114\99\101\115\87\105\110\100\111\119\32\61\32\76\105\98\114\97\114\121\58\78\101\119\87\105\110\100\111\119\40\34\65\117\116\111\32\67\108\105\99\107\34\41\10\10\108\111\99\97\108\32\84\97\98\49\32\61\32\80\104\97\110\116\111\109\70\111\114\99\101\115\87\105\110\100\111\119\58\78\101\119\83\101\99\116\105\111\110\40\34\77\97\105\110\34\41\10\108\111\99\97\108\32\84\97\98\50\32\61\32\80\104\97\110\116\111\109\70\111\114\99\101\115\87\105\110\100\111\119\58\78\101\119\83\101\99\116\105\111\110\40\34\67\114\101\100\105\116\115\34\41\10\10\84\97\98\49\58\67\114\101\97\116\101\66\117\116\116\111\110\40\34\65\117\116\111\32\67\108\105\99\107\34\44\32\102\117\110\99\116\105\111\110\40\41\10\10\40\103\101\116\103\101\110\118\40\41\41\46\67\111\110\102\105\103\32\61\32\123\10\32\91\34\67\108\105\99\107\65\116\116\97\99\107\34\93\32\61\32\116\114\117\101\10\125\10\10\115\112\97\119\110\40\102\117\110\99\116\105\111\110\40\41\10\32\32\32\32\103\97\109\101\58\71\101\116\83\101\114\118\105\99\101\40\34\82\117\110\83\101\114\118\105\99\101\34\41\46\82\101\110\100\101\114\83\116\101\112\112\101\100\58\67\111\110\110\101\99\116\40\102\117\110\99\116\105\111\110\40\41\10\32\32\32\32\32\32\32\32\105\102\32\103\101\116\103\101\110\118\40\41\46\67\111\110\102\105\103\91\39\67\108\105\99\107\65\116\116\97\99\107\39\93\32\116\104\101\110\10\32\32\32\32\32\32\32\32\32\32\32\32\32\112\99\97\108\108\40\102\117\110\99\116\105\111\110\40\41\10\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\103\97\109\101\58\71\101\116\83\101\114\118\105\99\101\39\86\105\114\116\117\97\108\85\115\101\114\39\58\67\97\112\116\117\114\101\67\111\110\116\114\111\108\108\101\114\40\41\10\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\103\97\109\101\58\71\101\116\83\101\114\118\105\99\101\39\86\105\114\116\117\97\108\85\115\101\114\39\58\66\117\116\116\111\110\49\68\111\119\110\40\86\101\99\116\111\114\50\46\110\101\119\40\48\44\49\44\48\44\49\41\41\10\32\32\32\32\32\32\32\32\32\32\32\32\101\110\100\41\10\32\32\32\32\32\32\32\32\101\110\100\10\32\32\32\32\101\110\100\41\10\101\110\100\41\10\101\110\100\41\10\10\84\97\98\49\58\67\114\101\97\116\101\66\117\116\116\111\110\40\34\68\105\115\97\98\108\101\32\65\117\116\111\32\67\108\105\99\107\34\44\32\102\117\110\99\116\105\111\110\40\41\10\10\40\103\101\116\103\101\110\118\40\41\41\46\67\111\110\102\105\103\32\61\32\123\10\32\91\34\67\108\105\99\107\65\116\116\97\99\107\34\93\32\61\32\102\97\108\115\101\10\125\10\10\115\112\97\119\110\40\102\117\110\99\116\105\111\110\40\41\10\32\32\32\32\103\97\109\101\58\71\101\116\83\101\114\118\105\99\101\40\34\82\117\110\83\101\114\118\105\99\101\34\41\46\82\101\110\100\101\114\83\116\101\112\112\101\100\58\67\111\110\110\101\99\116\40\102\117\110\99\116\105\111\110\40\41\10\32\32\32\32\32\32\32\32\105\102\32\103\101\116\103\101\110\118\40\41\46\67\111\110\102\105\103\91\39\67\108\105\99\107\65\116\116\97\99\107\39\93\32\116\104\101\110\10\32\32\32\32\32\32\32\32\32\32\32\32\32\112\99\97\108\108\40\102\117\110\99\116\105\111\110\40\41\10\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\103\97\109\101\58\71\101\116\83\101\114\118\105\99\101\39\86\105\114\116\117\97\108\85\115\101\114\39\58\67\97\112\116\117\114\101\67\111\110\116\114\111\108\108\101\114\40\41\10\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\103\97\109\101\58\71\101\116\83\101\114\118\105\99\101\39\86\105\114\116\117\97\108\85\115\101\114\39\58\66\117\116\116\111\110\49\68\111\119\110\40\86\101\99\116\111\114\50\46\110\101\119\40\48\44\49\44\48\44\49\41\41\10\32\32\32\32\32\32\32\32\32\32\32\32\101\110\100\41\10\32\32\32\32\32\32\32\32\101\110\100\10\32\32\32\32\101\110\100\41\10\101\110\100\41\10\101\110\100\41\10\10\84\97\98\50\58\67\114\101\97\116\101\66\117\116\116\111\110\40\34\77\97\100\101\32\66\121\32\82\121\97\110\32\86\120\98\101\115\34\44\32\102\117\110\99\116\105\111\110\40\41\10\101\110\100\41\10")()
+end)
+
+Tab7Section:NewButton("Pick a side 3 [admin]","Credits to owner",function()
+--LocalScript
+local rep = game.ReplicatedStorage
+local vip = rep.VIPServerOwner
+ 
+vip.OnClientEvent:Connect(function() -- remote recieve function
+    local GUIClone = game:GetService("ScreenGui"):WaitForChild("ScreenGui"):Clone() -- gui clone
+    GUIClone.Parent = game.Players.LocalPlayer.PlayerGui -- gui parenting
+end)
+ 
+--admins
+local button = script.Parent.toggleui
+local plr = game.Players.LocalPlayer
+ 
+if plr.UserId == 226632513 or 119473669 or 138640350 or 14181023980 then
+	button.Visible = true
+else
+	script.Parent:Destroy()
+end
+ 
+--main script
+script.Parent.Main.Active = true
+script.Parent.Main.Draggable = true
+ 
+local main = script.Parent.Main
+local kick = main.Kick
+local admin = main.Admin
+local kill = main.Kill
+local fling = main.Fling
+local KcA = main.KickAll
+local KA = main.KillAll
+local FA = main.FlingAll
+local AA = main.AdminAll
+local UA = main.Unadmin
+ 
+local user = main.User
+local reason = main.Reason
+ 
+local rep = game.ReplicatedStorage
+local a = rep.kick
+local b = rep.kill
+local c = rep.fling
+local d = rep.admin
+local p = rep.adminall
+local v = rep.kickall
+local x = rep.killall
+local f = rep.flingall
+local h = rep.unadmin
+ 
+kick.MouseButton1Click:connect(function()
+	a:FireServer(user.Text, reason.Text)
+end)
+ 
+admin.MouseButton1Click:connect(function()
+	d:FireServer(user.Text)
+end)
+ 
+kill.MouseButton1Click:connect(function()
+	b:FireServer(user.Text)
+end)
+ 
+fling.MouseButton1Click:connect(function()
+	c:FireServer(user.Text)
+end)
+ 
+KcA.MouseButton1Click:connect(function()
+	v:FireServer(reason.Text)
+end)
+ 
+KA.MouseButton1Click:connect(function()
+	x:FireServer(reason.Text)
+end)
+ 
+AA.MouseButton1Click:connect(function()
+	p:FireServer()
+end)
+ 
+FA.MouseButton1Click:connect(function()
+	f:FireServer()
+end)
+ 
+UA.MouseButton1Click:connect(function()
+	h:FireServer(user.Text)
+end)
+ 
+--notification
+ 
+ if game:GetService("Workspace").FilteringEnabled == true then
+warn("GUI STARTED!")
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "Admin Notification";
+Text = "Welcome user. You're An Admin! Click The Toggle Panel Button to Use The Admin Panel!";
+ })
+ else
+warn("GUI STARTED!")
+ game:GetService("StarterGui"):SetCore("SendNotification", {
+ Title = "Admin Notification";
+ Text = "Welcome user. You're An Admin! Click The Toggle Panel Button to Use The Admin Panel!";
 })
-
-_G.key = "balkan69#"
-_G.keyInput = ""
-
-function MakeScripthub()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Balkanx/Testing/main/Testing.lua", true))()
 end
-
-function CorrectrrKeyNotification()
-    OrionLib:MakeNotification({
-        Name = "Key link!",
-        Content = "Key link copied!",
-        Image = "rbxassetid://4483345998",
-        Time = 5
-    })
-end
-
-function CorrectKeyNotification()
-    OrionLib:MakeNotification({
-        Name = "Correct key!",
-        Content = "You have entered the correct key!",
-        Image = "rbxassetid://4483345998",
-        Time = 5
-    })
-    OrionLib:Destroy()
-end
-
-function IncorrectKeyNotification()
-    OrionLib:MakeNotification({
-        Name = "Incorrect key!",
-        Content = "You have entered the incorrect key!",
-        Image = "rbxassetid://4483345998",
-        Time = 5
-    })
-end
-
-local Tab = Window:MakeTab({
-    Name = "Key",
-    PremiumOnly = false
-})
-
-Tab:AddTextbox({
-    Name = "Enter key",
-    Default = "",
-    TextDisappear = true,
-    Callback = function(Value)
-        _G.keyInput = Value
+ 
+--ServerScriptService
+ 
+local rep = game.ReplicatedStorage
+local kill = rep.kill
+local kick = rep.kick
+local fling = rep.fling
+local admin = rep.admin
+local unadmin = rep.unadmin
+local vip = rep.VIPServerOwner
+ 
+local fa = rep.flingall
+local ka = rep.killall
+local kca = rep.kickall
+local aa = rep.adminall
+ 
+kill.OnServerEvent:connect(function(player, playerToKill)
+	game.Players:FindFirstChild(playerToKill).Character.Head:Destroy()
+end)
+ 
+kick.OnServerEvent:connect(function(player, playerToKick, reason)
+	game.Players:FindFirstChild(playerToKick):Kick(reason)
+end)
+ 
+fling.OnServerEvent:connect(function(player, playerToFling)
+	game.Players:FindFirstChild(playerToFling).Character.HumanoidRootPart.Position = Vector3.new(1234, 122.893, 2413)
+end)
+ 
+ 
+admin.OnServerEvent:connect(function(player, playerToAdmin)
+	game.Players:FindFirstChild(playerToAdmin).PlayerGui.ScreenGui.toggleui.Visible = true
+end)
+ 
+aa.OnServerEvent:connect(function(player)
+	for i,v in pairs(game:GetService("Players"):GetChildren()) do v.PlayerGui.ScreenGui.toggleui.Visible = true end
+end)
+ 
+kca.OnServerEvent:connect(function(player, reason)
+	for i,v in pairs(game:GetService("Players"):GetChildren()) do v:Kick(reason) end
+end)
+ 
+ka.OnServerEvent:connect(function(player)
+	for i,v in pairs(game:GetService("Players"):GetChildren()) do v.Character.Head:Destroy() end
+end)
+ 
+fa.OnServerEvent:connect(function(player)
+	for i,v in pairs(game:GetService("Players"):GetChildren()) do v.Character.HumanoidRootPart.Position = Vector3.new(1234, 122.893, 2413) end
+end)
+ 
+unadmin.OnServerEvent:connect(function(player, playerToUnadmin)
+	game.Players:FindFirstChild(playerToUnadmin).PlayerGui.ScreenGui.toggleui.Visible = false
+end)
+ 
+game.Players.PlayerAdded:Connect(function(plr) -- activated on player join
+    if plr.UserId == game.PrivateServerOwnerId then -- is the player the vip server owner?
+        vip:FireClient(plr) -- gives them a gui
     end
-})
+end)
+ 
+--username script in text label do not do this if you do not want to optional one
+ 
+script.Parent.Text = game.Players.LocalPlayer.Name
+end)
 
-Tab:AddButton({
-    Name = "Check key",
-    Callback = function()
-        if _G.keyInput == _G.key then
-            MakeScripthub()
-            CorrectKeyNotification()
-        else
-            IncorrectKeyNotification()
+Tab7Section:NewButton("Pick a side 4","Credits to owner",function()
+--Kill Everyone In The Server Except For You Except This Time, They Will Never Stop Dieing >:D--
+ 
+--Loops the script over and over and over again--
+while true do
+ 
+--Basically getting the person's name that is using the script--
+local me = game.Players.LocalPlayer
+ 
+--Picks a random number from 3 to 5--
+local randomwait = math.random(3, 5)
+ 
+--Waiting for as long as the number that was chosen--
+wait(randomwait)
+ 
+--Getting everything in the workspace--
+for i, v in pairs(game.Workspace:GetChildren()) do
+ 
+--Checking if the chosen object is a character by looking for a Humanoid and making sure the player isn't you by checking the name--
+    if v:FindFirstChild("Humanoid") and v.Name ~= me.Name then
+ 
+--Changing the humanoid health to 0 which is the equivalent of killing a player--
+        v:WaitForChild("Humanoid").Health = 0
+    end
+  end
+end
+end)
+
+local Tab7Section = Tab7:NewSection("Anime ball")
+
+Tab7Section:NewButton("Anime ball 1","Credits to owner",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/biVMKKGA"))()
+end)
+
+Tab7Section:NewButton("Anime ball 2","Credits to owner",function()
+loadstring(game:HttpGet("https://scriptblox.com/raw/UPD-Anime-Ball-Anim3-ba11-8757"))()
+end)
+
+local Tab7Section = Tab7:NewSection("Toilet tower defnce")
+
+Tab7Section:NewButton("Toilet tower defence 1","No description",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Toilet6/main/Tower5"))()
+end)
+
+Tab7Section:NewButton("Toilet tower defence 2","No description",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ou1z/Roblox-Scripts/master/InputRecorder.lua'))()
+end)
+
+Tab7Section:NewButton("Toilet tower defence 3","No description",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AyoReaper/Reaper-Hub/main/loader.lua"))()
+end)
+
+Tab7Section:NewButton("Toilet tower defence 4","No description",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/toilet3/main/Tower5"))()
+end)
+
+Tab7Section:NewButton("Toilet tower defence 6","No description",function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")();
+end)
+
+Tab7Section:NewButton("Toilet tower defence 7","No description",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Tower2/main/Toilet"))()
+end)
+
+local Tab7Section = Tab7:NewSection("Shark bite 1")
+
+Tab7Section:NewButton("shark bite1 1","Credits to owner",function()
+loadstring(rawget(game:GetObjects("rbxassetid://3623753581"), 1).Source)("Pepsi Byte")
+end)
+
+Tab7Section:NewButton("shark bite1 2","Credits to owner",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/YYVLbzVg", true))()
+end)
+
+Tab7Section:NewButton("shark bite2 3","Credits to owner",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/YYVLbzVg", true))()
+end)
+
+local Tab7Section = Tab7:NewSection("Mad city")
+
+Tab7Section:NewButton("Mad city 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lKoPoJLb/Scripts/main/Loader.lua"))()
+end)
+
+Tab7Section:NewButton("Mad city 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Deni210/madcity/main/Ruby%20Hub", true))()
+end)
+
+Tab7Section:NewButton("Mad city 3","Credits to owner",function()
+loadstring(game:HttpGet("https://gist.githubusercontent.com/TurkOyuncu99/811e25ec8cfcdaa9ae7026353288783c/raw/4b073a5c1a0a4e2ed7e2304c2e769eb440a371a9/h", true))()
+end)
+
+Tab7Section:NewButton("Mad city 4","Credits to owner",function()
+loadstring(game:HttpGet("https://jack1214060.xyz/jayhub",true))()
+end)
+
+Tab7Section:NewButton("Mad city 5 [auto rob]","Credits to owner",function()
+_G.serverhop = true --true > Auto Execute Folder
+_G.wait = 3 --Time after its Starting to Rob
+loadstring(game:HttpGet("https://raw.githubusercontent.com/aymarko/Autorob-Loadstring/main/Code", true))()
+end)
+
+local Tab7Section = Tab1:NewSection("Goal kick simulator")
+
+Tab7Section:NewButton("Goal kick simulator 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedude59/Scripts/main/GoalKickSimulator"))()
+end)
+
+Tab7Section:NewButton("Goal kick simulator 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Cospog/pufferfish/main/goalKick.lua"))()
+end)
+
+Tab7Section:NewButton("Goal kick simulator 3","Credits to owner",function()
+loadstring(game:HttpGet"https://thedragonslayer2.github.io")()
+end)
+
+Tab7Section:NewButton("Goal kick simulator 4","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/SunkenMuch/Soggyware/main/Main',true))()
+end)
+
+Tab7Section:NewButton("Goal kick simulator 5","Credits to owner",function()
+loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/9281034297"))()
+end)
+
+Tab7Section:NewButton("Goal kick simulator 6","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedude59/Scripts/main/GoalKickSimulator"))()
+end)
+
+local Tab7Section = Tab1:NewSection("Big Paintball 2")
+
+Tab7Section:NewButton("Big paint ball 2, 1","Credits to owner",function()
+loadstring(game:HttpGet("https://scriptblox.com/raw/BIG-Paintball!-Pikachu-Hub-7831"))()
+end)
+
+Tab7Section:NewButton("Big paint ball 2, 2","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/InsurgenceHub/IncurgenceHub.github.io/main/InsurgentHubOfficial'))()
+end)
+
+Tab7Section:NewButton("Big paint ball 2, 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
+Tab7Section:NewButton("Big paint ball 2, 4","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/migu-star/Scripts/main/Paintball.lua"))()
+end)
+
+Tab7Section:NewButton("Big paint ball 2, 5","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LeoKholYt/roblox/main/bigpaintball.lua",true))()
+end)
+
+Tab7Section:NewButton("Big paint ball 2, 6","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/The3Bakers4565/Spicy-Bagel/main/Other/Big_Paintball/Kill_All.lua"))()
+end)
+
+Tab7Section:NewButton("Big paint ball 2, 7","Credits to owner",function()
+loadstring(game:HttpGet("https://dylz.000webhostapp.com/DylZHubNew/loader"))()
+end)
+
+Tab7Section:NewButton("Big paint ball 2, 8","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/radjahfromdiscord/iNEXT/main/source"))()
+end)
+
+local Tab7Section = Tab1:NewSection("Rotube life")
+
+Tab7Section:NewButton("Rotube life 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Scripts/main/YouTube%20Life/Auto%20Farm.lua"))()
+end)
+
+Tab7Section:NewButton("Rotube life 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BunnyCat1/Games/main/YoutubeLife"))()
+end)
+
+local Tab7Section = Tab1:NewSection("My restaurant")
+
+Tab7Section:NewButton("My restaurant 1","Credits to owner",function()
+loadstring(game:HttpGet("https://system-exodus.com/scripts/MyRestaurant/MyRestaurant.lua", true))()
+end)
+
+Tab7Section:NewButton("My restaurant 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/My/main/Restaurant"))()
+end)
+
+Tab7Section:NewButton("My restaurant 3","Credits to owner",function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/My-Restaurant!-Fast-Autofarm-4610"))()
+end)
+
+Tab7Section:NewButton("My restaurant 4","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ProjectLightningDev/Project-Lightning-Loader/main/Loader.Lua"))()
+end)
+
+Tab7Section:NewButton("My restaurant 5","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafacasari/roblox-scripts/main/mr.lua"))()
+end)
+
+Tab7Section:NewButton("My restaurant 6","Credits to owner",function()
+loadstring(game:HttpGet("http://void-scripts.com/Scripts/myRest.lua"))()
+end)
+
+Tab7Section:NewButton("My restaurant 7","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/myrestaurant"))()
+end)
+
+Tab7Section:NewButton("My restaurant 8","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Mainstring.lua"))()
+end)
+
+Tab7Section:NewButton("My restaurant 9","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/MyRestaurant"))()
+end)
+
+Tab7Section:NewButton("My restaurant 10","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/dogefriendyt/rt2/main/hub'))()
+end)
+
+local Tab7Section = Tab1:NewSection("Basketball stars 2")
+
+Tab7Section:NewButton("Basketball 2, 1[Key:Basketball_^^Stars_2!!_132477]","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Basketball-Stars/main/2"))()
+end)
+
+Tab7Section:NewButton("Basketball 2, 2","Credits to owner",function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/LonleyWolf1988/http-www.lazzyexploits.tk-/main/Basketball%20Stars%202"), true))()
+end)
+
+Tab7Section:NewButton("Basketball 2, 3","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/shit%20script%20pack/CheatX'))()
+end)
+
+Tab7Section:NewButton("Basketball 2, 4","Credits to owner",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/G81j7qd3", true))()
+end)
+
+local Tab1Section = Tab1:NewSection("Giant Survival")
+
+Tab7Section:NewButton("Giant Survival 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RiseValco/scripts/main/GiantSurvival.lua"))()
+end)
+
+Tab7Section:NewButton("Giant Survival 2","Credits to owner",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/RTrade/Voidz/main/Games.lua'),true))()
+end)
+
+Tab7Section:NewButton("Giant Survival 3","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+end)
+
+Tab7Section:NewButton("Giant Survival 4","Credits to owner",function()
+loadstring(game:HttpGet('http://connor5671.weebly.com/files/theme/GiantSurvival.txt'))()
+end)
+
+Tab7Section:NewButton("Giant Survival 5","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Survival808/main/SurvivalGame4"))()
+end)
+
+Tab7Section:NewButton("Giant Survival 6","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Survival2/main/GameRoblox"))()
+end)
+
+local Tab7Section = Tab1:NewSection("Far.ing And Friends")
+
+Tab7Section:NewButton("Farming and freinds 1","Credits to owner",function()
+loadstring(game:HttpGet("https://www.tropicalfishresort.xyz/loader.lua"))()
+end)
+
+Tab7Section:NewButton("Farming and freinds 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BadScripter/Scripts/master/MyHeroLegendaryAutofarm.lua",true))()
+end)
+
+local Tab1Section = Tab1:NewSection("Hole In The Wall")
+
+Tab7Section:NewButton("Hole In The Wall 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/birdwastaken/birdscripts/main/holeinthewall.lua"))()
+end)
+
+Tab7Section:NewButton("Hole In The Wall 2","Credits to owner",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+end)
+
+Tab7Section:NewButton("Hole In The Wall 3","Credits to owner",function()
+getgenv()["cofiG"] = getgenv()["cofiG"] or {}
+local hasToUpdate = true
+local alreadyRan = cofiG.gravityController ~= nil
+ 
+local http = game:GetService'HttpService'
+local readfile,writefile,fileexists = readfile or syn_io_read,writefile or syn_io_write,isfile or readfile
+ 
+local rawUrl,baseUrl = "https://ixss.keybase.pub/rblx/gravityController/", "https://keybase.pub/ixss/rblx/gravityController/"
+ 
+do
+    _G.req = [[
+        local require = function(lol)
+            lol = "https://raw.githubusercontent.com/msva/lua-htmlparser/master/src/"..lol:gsub("%.","/")..".lua";
+            return loadstring(_G.req..game:HttpGet(lol))();
+        end;
+    ]]
+    
+    local require = function(lol)
+        lol = "https://raw.githubusercontent.com/msva/lua-htmlparser/master/src/"..lol:gsub("%.","/")..".lua";
+        return loadstring(_G.req..game:HttpGet(lol))();
+    end;
+    
+    cofiG.htmlparser = cofiG.htmlparser or require"htmlparser"
+end
+ 
+do  -- check if exists
+if fileexists'gravityController.json' then
+local json = readfile'gravityController.json'
+if json then
+cofiG.gravityController = http:JSONDecode(json)
+hasToUpdate = cofiG.gravityController.Version ~= game:HttpGet(rawUrl.."Version.txt")
+end
+end
+game.StarterGui:SetCore("ChatMakeSystemMessage", {
+Text = hasToUpdate and "Updating script..." or "Running script!";
+Font = Enum.Font.Code;
+Color = Color3.fromRGB(255, 60, 60);
+FontSize = Enum.FontSize.Size96;   
+})
+end
+ 
+ 
+if hasToUpdate then -- update/download
+    
+    function getScripts()
+        local ret = {}
+        local text = game:HttpGet(baseUrl, false)
+        
+        local root = cofiG.htmlparser.parse(text)
+        local files = root:select(".file")
+        
+        for i,v in pairs(files) do
+            if string.sub(v.attributes.href, string.len(v.attributes.href)-3) == ".lua" then
+                local name = string.sub(v.attributes.href,string.len(baseUrl)+1, string.len(v.attributes.href)-4)
+                local script = rawUrl..name..".lua"
+                ret[name] = game:HttpGet(script)
+            elseif string.sub(v.attributes.href, string.len(v.attributes.href)-3) == ".txt" then
+                local name = string.sub(v.attributes.href,string.len(baseUrl)+1, string.len(v.attributes.href)-4)
+                local script = rawUrl..name..".txt"
+                ret[name] = game:HttpGet(script)
+            end
         end
+        
+        return ret
     end
+    cofiG.gravityController = getScripts()
+    writefile('gravityController.json', http:JSONEncode(cofiG.gravityController))
+    warn('Script updated!')
+end
+ 
+local a,b = pcall(loadstring(cofiG.gravityController.Loader))
+ 
+if not a then
+error('Loader ', b)
+end
+ 
+if not alreadyRan then
+game.StarterGui:SetCore("ChatMakeSystemMessage", {
+Text = game:HttpGet('https://ixss.keybase.pub/Watermark.txt', true)..", originally made by EgoMoose.";
+Font = Enum.Font.Code;
+Color = Color3.fromRGB(244, 0, 175);
+FontSize = Enum.FontSize.Size96;   
 })
+end
+end)
 
-Tab:AddButton({
-    Name = "Key link",
-    Callback = function()
-        setclipboard("https://discord.com/invite/z2QcdakrJK")
-        print("Join our server! https://discord.com/invite/z2QcdakrJK")
-        CorrectrrKeyNotification()
+local Tab1Section = Tab1:NewSection("Combat Warriors")
+
+Tab7Section:NewButton("Combat Warriors 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rblxscriptsnet/rblxhub/main/rblxhub.lua"))()
+end)
+
+Tab7Section:NewButton("Combat Warriors 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/leakediz/top-g/main/combat%20warriors"))()
+end)
+
+Tab7Section:NewButton("Combat Warriors 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rblxscriptsnet/rblxhub/main/rblxhub.lua"))()
+end)
+
+Tab7Section:NewButton("Combat Warriors 4","Credits to owner",function()
+loadstring(game:HttpGet'https://raw.githubusercontent.com/SussyImposterRed/Scripts/main/NEW_NOVA')()
+end)
+
+Tab7Section:NewButton("Combat Warriors 5","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SussyImposterRed/Scripts/main/NOVA_HUB_SOURCE"))()
+end)
+
+Tab7Section:NewButton("Combat Warriors 6","Credits to owner",function()
+loadstring(game:HttpGet("https://projecthook.xyz/scripts/free.lua"))()
+end)
+
+Tab7Section:NewButton("Combat Warriors 7","Credits to owner",function()
+loadstring(game:HttpGet("https://cheeseskid.tk/shit/combat_warriors.lua",true))()
+end)
+
+Tab7Section:NewButton("Combat Warriors 8","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SpiritXmas/Project-Hook/main/required.lua"))()
+end)
+
+Tab7Section:NewButton("Combat Warriors 9","Credits to owner",function()
+loadstring(game:HttpGet("https://projecthook.xyz/scripts/new-free.lua"))()
+end)
+
+Tab7Section:NewButton("Combat Warriors 10","Credits to owner",function()
+loadstring(game:HttpGet("https://projecthook.xyz/scripts/free.lua"))()
+end)
+
+Tab7Section:NewButton("Combat Warriors 11","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SpiritXmas/Project-Hook/main/required.lua"))()
+end)
+
+local Tab1Section = Tab1:NewSection("Basketball legends")
+
+Tab7Section:NewButton("Basketball legends 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xtrey10x/xtrey10x-hub/main/Basketball%20Legends"))()
+end)
+
+Tab7Section:NewButton("Basketball legends 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Legends1/main/Ball"))()
+end)
+
+Tab7Section:NewButton("Basketball legends 3","Credits to owner",function()
+loadstring(game:HttpGet("https://vexiumhub.xyz/BasketballLegends.lua", true))()
+end)
+
+Tab7Section:NewButton("Basketball legends 4","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dynamic-Hub/Free-Scripts/main/Basketball-Legends.lua"))()
+end)
+
+Tab7Section:NewButton("Basketball legends 5","Credits to owner",function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b02b433bbccc5fc5e5262dc11c548d36.lua"))()
+end)
+
+local Tab1Section = Tab1:NewSection("Fruits Battlegrounds")
+
+Tab7Section:NewButton("Fruits Battlegrounds 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xtrey10x/xtrey10x-hub/main/FruitBattlegrounds"))()
+end)
+
+Tab7Section:NewButton("Fruits Battlegrounds 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JumbleBumble/Scripts/main/FruitBattlegrounds.lua"))()
+end)
+
+Tab7Section:NewButton("Fruits Battlegrounds 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/WanHubMan/StarHub/main/StarHubPaid"))()
+end)
+
+Tab7Section:NewButton("Fruits Battlegrounds 4","Credits to owner",function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/BillsTheGod/V3RMILLION_PROJECTS/main/Fruit%20Battlegrounds.lua")))()
+end)
+
+local Tab1Section = Tab1:NewSection("Boxing beta")
+
+Tab7Section:NewButton("Boxing Beta 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Mstir16/legocheats/main/archive/Boxing%20%5BBETA%5D/script.lua"))()
+end)
+
+Tab7Section:NewButton("Boxing Beta 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Mstir16/legocheats/main/archive/Boxing%20%5BBETA%5D/script.lua"))()
+end)
+
+Tab7Section:NewButton("Boxing Beta 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RectangularObject/Roblox-Hitbox-Expander/main/HitboxExtenderv2.lua",true))()
+end)
+
+local Tab1Section = Tab1:NewSection("Zombie Uprising")
+
+
+
+
+Tab7Section:NewButton("Zombie Uprising 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SlamminPig/rblxgames/main/Zombie%20Uprising/ZombieUprisingGUI"))()
+end)
+
+Tab7Section:NewButton("Zombie Uprising 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/toskaman/fb/master/MSDOS", true))()
+end)
+
+local Tab1Section = Tab1:NewSection("Squid game x")
+
+
+Tab7Section:NewButton("Squid game x 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LilFrench21/Hecta/main/Script/Squid%20Game"))()
+end)
+
+
+
+Tab7Section:NewButton("Squid game x 2","Credits to owner",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Urbanstorms/DomainX/main/Squid%20Game.lua'),true))()
+end)
+
+Tab7Section:NewButton("Squid game x 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/thatchrisie/squidGameScript/main/README.md",true))()
+end)
+
+Tab7Section:NewButton("Squid game x 4","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LilFrench21/Hecta/main/Script/Squid%20Game"))()
+end)
+
+Tab7Section:NewButton("Squid game x 5","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LilFrench21/Hecta/main/Script/Squid%20Game"))()
+end)
+
+Tab7Section:NewButton("Squid game x 6","Credits to owner",function()
+local c = workspace['Glass Bridge'].GlassPane:GetChildren()
+for i=1,#c do
+if c[i]['1'].CanCollide == true then
+c[i]['1'].Transparency = 0
+elseif c[i]['2'].CanCollide == true then
+c[i]['2'].Transparency = 0
+end
+end
+end)
+
+Tab7Section:NewButton("Squid game x 7","Credits to owner",function()
+local re = game.ReplicatedStorage:WaitForChild("Round6Repli")
+ 
+ 
+re.OnClientEvent:Connect(function(instruction, value, colour)
+    
+    if instruction == "status" then
+        
+        script.Parent.Status.Text = value
+        script.Parent.Status.TextColor3 = colour
+        
+        
+    elseif instruction == "timer" then
+        
+        script.Parent.TimerLabel.Text = value
+        
+        
+    elseif instruction == "barrier" then
+        
+        wait(2)
+        
+        value.CanCollide = true
     end
-})
+end)
+end)
 
-OrionLib:Init()
+Tab7Section:NewButton("Squid game x 8","Credits to owner",function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/BaconLords/Random-Shit/main/Squid%20Game.lua")))()
+end)
+
+Tab7Section:NewButton("Squid game x 9","Credits to owner",function()
+local c = workspace['Glass Bridge'].GlassPane:GetChildren()
+for i=1,#c do
+if c[i]['1'].CanCollide == true then
+c[i]['1'].Transparency = 0
+elseif c[i]['2'].CanCollide == true then
+c[i]['2'].Transparency = 0
+end
+end
+end)
+
+Tab7Section:NewButton("Squid game x 10","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LilFrench21/Hecta/main/Script/Squid%20Game"))()
+end)
+
+local Tab1Section = Tab1:NewSection("Squid game")
+
+
+Tab7Section:NewButton("Squid game 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LilFrench21/Hecta/main/Script/Squid%20Game"))()
+end)
+
+
+
+Tab7Section:NewButton("Squid game 2","Credits to owner",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Urbanstorms/DomainX/main/Squid%20Game.lua'),true))()
+end)
+
+Tab7Section:NewButton("Squid game 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/thatchrisie/squidGameScript/main/README.md",true))()
+end)
+
+Tab7Section:NewButton("Squid game 4","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LilFrench21/Hecta/main/Script/Squid%20Game"))()
+end)
+
+Tab7Section:NewButton("Squid game 5","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LilFrench21/Hecta/main/Script/Squid%20Game"))()
+end)
+
+Tab7Section:NewButton("Squid game 6","Credits to owner",function()
+local c = workspace['Glass Bridge'].GlassPane:GetChildren()
+for i=1,#c do
+if c[i]['1'].CanCollide == true then
+c[i]['1'].Transparency = 0
+elseif c[i]['2'].CanCollide == true then
+c[i]['2'].Transparency = 0
+end
+end
+end)
+
+Tab7Section:NewButton("Squid game 7","Credits to owner",function()
+local re = game.ReplicatedStorage:WaitForChild("Round6Repli")
+ 
+ 
+re.OnClientEvent:Connect(function(instruction, value, colour)
+    
+    if instruction == "status" then
+        
+        script.Parent.Status.Text = value
+        script.Parent.Status.TextColor3 = colour
+        
+        
+    elseif instruction == "timer" then
+        
+        script.Parent.TimerLabel.Text = value
+        
+        
+    elseif instruction == "barrier" then
+        
+        wait(2)
+        
+        value.CanCollide = true
+    end
+end)
+end)
+
+Tab7Section:NewButton("Squid game 8","Credits to owner",function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/BaconLords/Random-Shit/main/Squid%20Game.lua")))()
+end)
+
+Tab7Section:NewButton("Squid game 9","Credits to owner",function()
+local c = workspace['Glass Bridge'].GlassPane:GetChildren()
+for i=1,#c do
+if c[i]['1'].CanCollide == true then
+c[i]['1'].Transparency = 0
+elseif c[i]['2'].CanCollide == true then
+c[i]['2'].Transparency = 0
+end
+end
+end)
+
+Tab7Section:NewButton("Squid game 10","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LilFrench21/Hecta/main/Script/Squid%20Game"))()
+end)
+
+local Tab1Section = Tab1:NewSection("Trs Public Pitch")
+
+Tab7Section:NewButton("Trs Public Pitch 1","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/OpenGamerTips/Roblox-Scripts/main/NetworkScripts/ownership.lua",true))()
+end)
+
+Tab7Section:NewButton("Trs Public Pitch 2","Credits to owner",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/Kb0xnjEZ",true))()
+end)
+
+Tab7Section:NewButton("Trs Public Pitch 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0animegods", true))()
+end)
+
+local Tab1Section = Tab1:NewSection("Flee The Facility")
+
+
+Tab7Section:NewButton("Flee The Facility 1","Credits to owner",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+end)
+
+Tab7Section:NewButton("Flee The Facility 2","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NexIsHot/Lunar/main/FTF.lua",true))()
+end)
+
+Tab7Section:NewButton("Flee The Facility 3","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/khoaScript/scripts/master/flee-the-facility.lua"))()
+end)
+
+Tab7Section:NewButton("Flee The Facility 4","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Drifty96/ftfgui/main/ftfgui", true))()
+end)
+
+Tab7Section:NewButton("Flee The Facility 5","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Drifty96/ftfgui/main/ftfgui", true))()
+end)
+
+Tab7Section:NewButton("Flee The Facility 6","Credits to owner",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/khoaScript/scripts/master/flee-the-facility.lua"))()
+end)
+
+Tab7Section:NewButton("Flee The Facility 7","Credits to owner",function()
+if game.PlaceId == 893973440 or game.PlaceId == 1738581510 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/bedra45/Random-games-xd/main/bedraFtfFinalGUI"))()
+else
+game:GetService("StarterGui"):SetCore("SendNotification",{
+Title = "Note!",
+Text = "Please Join Flee the facility first."
+})
+end
+end)
+
+  local Tab7Section = Tab7:NewSection("More coming soon")
+
+Tab2Section:NewButton("--- added more scripts","No description",function()
+end)
+
+Tab2Section:NewButton("--- Added more games","No description",function()
+end)
+
+Tab3Section:NewButton("Keyboard GUI","No description",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+end)
+
+Tab3Section:NewButton("Fly (Mobile)","No description",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+end)
+
+Tab3Section:NewButton("Infinity yield FE","No description",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+Tab3Section:NewButton("RTX Gui","No description",function()
+loadstring(game:HttpGet('https://pastebin.com/raw/Bkf0BJb3'))()
+end)
+
+Tab3Section:NewButton("Admin GUI","No description",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+end)
+
+Tab3Section:NewButton("Yeet Gui","No description",function()
+local lp = game:FindService("Players").LocalPlayer
+ 
+local function gplr(String)
+	local Found = {}
+	local strl = String:lower()
+	if strl == "all" then
+		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+			table.insert(Found,v)
+		end
+	elseif strl == "others" then
+		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+			if v.Name ~= lp.Name then
+				table.insert(Found,v)
+			end
+		end 
+	elseif strl == "me" then
+		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+			if v.Name == lp.Name then
+				table.insert(Found,v)
+			end
+		end 
+	else
+		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+			if v.Name:lower():sub(1, #String) == String:lower() then
+				table.insert(Found,v)
+			end
+		end 
+	end
+	return Found 
+end
+ 
+local function notif(str,dur)
+	game:FindService("StarterGui"):SetCore("SendNotification", {
+		Title = "yeet gui",
+		Text = str,
+		Icon = "rbxassetid://2005276185",
+		Duration = dur or 3
+	})
+end
+ 
+--// sds
+ 
+local h = Instance.new("ScreenGui")
+local Main = Instance.new("ImageLabel")
+local Top = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local TextBox = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
+ 
+h.Name = "h"
+h.Parent = game:GetService("CoreGui")
+h.ResetOnSpawn = false
+ 
+Main.Name = "Main"
+Main.Parent = h
+Main.Active = true
+Main.Draggable = true
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.174545452, 0, 0.459574461, 0)
+Main.Size = UDim2.new(0, 454, 0, 218)
+Main.Image = "rbxassetid://2005276185"
+ 
+Top.Name = "Top"
+Top.Parent = Main
+Top.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Top.BorderSizePixel = 0
+Top.Size = UDim2.new(0, 454, 0, 44)
+ 
+Title.Name = "Title"
+Title.Parent = Top
+Title.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0, 0, 0.295454562, 0)
+Title.Size = UDim2.new(0, 454, 0, 30)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "FE Yeet Gui (trollface edition)"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+ 
+TextBox.Parent = Main
+TextBox.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0704845786, 0, 0.270642221, 0)
+TextBox.Size = UDim2.new(0, 388, 0, 62)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderText = "Who do i destroy(can be shortened)"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+ 
+TextButton.Parent = Main
+TextButton.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.10352423, 0, 0.596330225, 0)
+TextButton.Size = UDim2.new(0, 359, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Cheese em'"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+ 
+TextButton.MouseButton1Click:Connect(function()
+	local Target = gplr(TextBox.Text)
+	if Target[1] then
+		Target = Target[1]
+ 
+		local Thrust = Instance.new('BodyThrust', lp.Character.HumanoidRootPart)
+		Thrust.Force = Vector3.new(9999,9999,9999)
+		Thrust.Name = "YeetForce"
+		repeat
+			lp.Character.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame
+			Thrust.Location = Target.Character.HumanoidRootPart.Position
+			game:FindService("RunService").Heartbeat:wait()
+		until not Target.Character:FindFirstChild("Head")
+	else
+		notif("Invalid player")
+	end
+end)
+ 
+--//fsddfsdf
+notif("Loaded successfully! Created by scuba#0001", 5)
+end)
+
+Tab3Section:NewButton("Admin Hub","No description",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HeyGyt/simplityv2/main/main"))()
+end)
+
+Tab3Section:NewButton("FE R15 Emotes","No description",function()
+  loadstring(game:HttpGet("https://gitlab.com/Tsuniox/lua-stuff/-/raw/master/R15GUI.lua"))()
+  end)
+  
+  Tab3Section:NewButton("Spy Gui","No description",function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/MichaelScripter/MiniScript/main/Spy%20gui.lua"))()
+  end)
+  
+  Tab3Section:NewButton("Auto Piano","No description",function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Madness676/FixedPianoV2/main/Pandaexploits.lua", true))()
+  end)
+
+Tab3Section:NewButton("Emotes[must be r15]","No description",function()
+  loadstring(game:HttpGet("https://gitlab.com/Tsuniox/lua-stuff/-/raw/master/R15GUI.lua"))()
+  end)
+  
+local Tab2Section = Tab2:NewSection("Updates disabled FIXING")
